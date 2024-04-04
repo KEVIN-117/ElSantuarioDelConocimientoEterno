@@ -1,0 +1,26 @@
+app = "PetsApp"
+
+[env]
+  MONGO_URL = "mongodb+srv://public:tRbSsj4fK7ZKtXj5@cluster0.kmhn7b9.mongodb.net/sis414_test?retryWrites=true&w=majority"
+  ROOT_URL = "https://PetsApp.fly.dev/"
+  PORT = "80"
+
+[[services]]
+  internal_port = 80
+  protocol = "tcp"
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = "80"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = "443"
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000

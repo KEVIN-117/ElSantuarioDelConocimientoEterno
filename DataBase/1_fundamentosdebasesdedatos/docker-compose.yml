@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  db:
+    container_name: my_sql_app
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=DB_Fundamentals
+    ports:
+      - 3307:3306
+    volumes:
+      - ./db:/var/lib/mysql

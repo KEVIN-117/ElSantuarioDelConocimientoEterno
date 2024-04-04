@@ -1,0 +1,7 @@
+
+Nombre :kevin
+Apeliido :alexis
+Ci :8514507
+Sueldo :2500
+Las horas que trabajo es:12
+Su sueldo es de 30000

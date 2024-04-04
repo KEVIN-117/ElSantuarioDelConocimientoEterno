@@ -1,0 +1,4 @@
+El nombre del cliente es: Kevin Rodriguez
+Detalle: una buifanda color rojo
+Fecha de la entrega: 2 dias
+
